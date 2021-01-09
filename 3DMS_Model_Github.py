@@ -160,7 +160,7 @@ X, Y = sm.fit_sample(X, Y)
 
 # Run classifier with cross-validation and plot ROC curves
 cv = StratifiedKFold(n_splits=5)
-classifier1 = RandomForestRegressor(n_estimators = 1000, random_state = 42)
+classifier1 = RandomForestClassifier(n_estimators = 1000, random_state = 42)
 
 tprs = []
 aucs = []
